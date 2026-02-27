@@ -23,7 +23,7 @@ DynClock changes the clock icon on your Sailfish OS device according to the curr
 mkdir -p %{buildroot}/usr/share/harbour-dynclock
 mkdir -p %{buildroot}/usr/share/applications
 mkdir -p %{buildroot}/etc/systemd/system
-cp -r * %{buildroot}/usr/share/harbour-dynclock/
+cp -r harbour-dynclock/usr/share/harbour-dynclock %{buildroot}/usr/share/harbour-dynclock
 
 %files
 %defattr(-,root,root,-)
