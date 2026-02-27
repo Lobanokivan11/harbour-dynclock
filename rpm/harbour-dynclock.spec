@@ -24,6 +24,8 @@ mkdir -p %{buildroot}/usr/share/harbour-dynclock
 mkdir -p %{buildroot}/usr/share/applications
 mkdir -p %{buildroot}/etc/systemd/system
 cp -r harbour-dynclock/usr/share/harbour-dynclock %{buildroot}/usr/share/harbour-dynclock
+cp harbour-dynclock/usr/share/harbour-dynclock/harbour-dynclock.service %{buildroot}/etc/systemd/system/harbour-dynclock.service
+cp harbour-dynclock/usr/share/harbour-dynclock/harbour-dynclock.timer %{buildroot}/etc/systemd/system/harbour-dynclock.timer
 
 %files
 %defattr(-,root,root,-)
